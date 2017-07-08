@@ -1,7 +1,7 @@
 # FAT12Parser
 A parser written in C that does minimal read, copy, and write operations on a FAT12 disk image.
 
-It's uses quite a bit of wacky bit shifting magic, and basically works by `fseek()`-ing by specific
+It uses quite a bit of wacky bit shifting magic, and basically works by `fseek()`-ing by specific
 bytes to traverse the file. If you really want to figure out whats going on, you can look at the FAT12 specs in this
 repo, and try to understand why things are happenning the way they are. `./diskput` is definitely not
 bulletproof as it probably doesn't handle very typical cases of overwritting and disk size overflow, etc.
